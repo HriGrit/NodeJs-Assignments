@@ -4,7 +4,7 @@ const backupFile = "backup_products.json";
 
 function readProducts() {
     const data = fs.readFileSync(productsFile, { encoding: "utf8" });
-    const backupData = fs.readFileSync(backupFile, { encoding: "utf8" });
+    // const backupData = fs.readFileSync(backupFile, { encoding: "utf8" });
     return JSON.parse(data);
 }
 
