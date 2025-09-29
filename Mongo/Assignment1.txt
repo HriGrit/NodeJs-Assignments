@@ -1,0 +1,90 @@
+Inserting Food Data:
+
+db.foodItems.insertMany([
+  { name: "Orange Juice", calories: 120, brand: "Tropicana", category: "juices", price: 50 },
+  { name: "Potato Chips", calories: 150, brand: "Haldiram", category: "snack", price: 30 },
+  { name: "Veg Biryani", calories: 300, brand: "BTW", category: "meals", price: 120 }
+]);
+
+db.foodItems.insertOne({ name: "Apple Juice", calories: 110, brand: "Real", category: "juices", price: 60 });
+db.foodItems.insertOne({ name: "Masala Peanuts", calories: 200, brand: "Haldiram", category: "snack", price: 40 });
+
+Inserting Restraunt Data:
+
+db.restaurants.insertMany([
+  {
+    name: "Spice Hub",
+    year: 2010,
+    location: "Connaught Place",
+    contact: "9876543210",
+    email: "contact@spicehub.com",
+    nosOfDaysOpen: 365,
+    city: "Delhi",
+    category: "meals",
+    serving: "Dining"
+  },
+  {
+    name: "Juice Junction",
+    year: 2015,
+    location: "Andheri",
+    contact: "9123456780",
+    email: "hello@juicejunction.com",
+    nosOfDaysOpen: 300,
+    city: "Mumbai",
+    category: "juices",
+    serving: "Takeaway"
+  },
+  {
+    name: "Snack Shack",
+    year: 2005,
+    location: "MG Road",
+    contact: "9988776655",
+    email: "info@snackshack.com",
+    nosOfDaysOpen: 360,
+    city: "Bangalore",
+    category: "snack",
+    serving: "Buffet"
+  }
+]);
+
+db.restaurants.insertOne({
+  name: "Delhi Diner",
+  year: 2000,
+  location: "Karol Bagh",
+  contact: "9012345678",
+  email: "contact@delhidiner.com",
+  nosOfDaysOpen: 365,
+  city: "Delhi",
+  category: "meals",
+  serving: "Dining"
+});
+
+db.restaurants.insertOne({
+  name: "Mumbai Meals",
+  year: 2012,
+  location: "Bandra",
+  contact: "9876501234",
+  email: "hello@mumbaimeals.com",
+  nosOfDaysOpen: 350,
+  city: "Mumbai",
+  category: "meals",
+  serving: "Takeaway"
+});
+
+db.foodItems.find({ category: "juices" }).pretty()
+
+db.restaurants.find({ city: { $in: ["Delhi", "Mumbai"] } }).pretty()
+
+db.foodItems.updateMany(
+  { category: "snack" },
+  { $inc: { price: 10 } }
+)
+
+db.restaurants.updateMany(
+  { city: "Delhi" },
+  { $set: { location: "New Delhi" } }
+)
+
+db.foodItems.deleteMany({ brand: "Haldiram" })
+
+db.foodItems.deleteMany({ category: "juices" })

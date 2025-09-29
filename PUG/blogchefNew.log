@@ -1,0 +1,6 @@
+GET -/admin/register - Fri, 26 Sep 2025 10:42:20 GMT - 258.484 ms
+GET -/ - Fri, 26 Sep 2025 10:42:25 GMT - 16.589 ms
+GET -/admin/register - Fri, 26 Sep 2025 10:42:28 GMT - 25.089 ms
+GET -/admin/login - Fri, 26 Sep 2025 10:42:35 GMT - 5.928 ms
+GET -/assets/css/style.css - Fri, 26 Sep 2025 10:42:35 GMT - 6.235 ms
+GET -/assets/js/main.js - Fri, 26 Sep 2025 10:42:35 GMT - 1.088 ms

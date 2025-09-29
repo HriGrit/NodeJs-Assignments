@@ -1,0 +1,12 @@
+[
+    { "Name": "Alice", "City": "New York" },
+    { "Name": "Bob", "City": "Los Angeles" },
+    { "Name": "Charlie", "City": "Chicago" },
+    { "Name": "Diana", "City": "Houston" },
+    { "Name": "Ethan", "City": "Phoenix" },
+    { "Name": "Fiona", "City": "Philadelphia" },
+    { "Name": "George", "City": "San Antonio" },
+    { "Name": "Hannah", "City": "San Diego" },
+    { "Name": "Ian", "City": "Dallas" },
+    { "Name": "Julia", "City": "San Jose" }
+]
